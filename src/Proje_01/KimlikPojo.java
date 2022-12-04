@@ -1,5 +1,8 @@
 package Proje_01;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class KimlikPojo {
     private int kimlikId;
     public String isimSoyisim;
@@ -43,11 +46,16 @@ public class KimlikPojo {
 
     @Override
     public String toString() {
-        return "Kimlik Bilgileri{" +
-                "kimlikId='" + kimlikId + '\'' +
-                ", isimSoyisim='" + isimSoyisim + '\'' +
-                ", adres='" + adres + '\'' +
-                ", telefonNo='" + telefonNo + '\'' +
-                '}';
+        return
+                "==============================\n"+
+        "Kimlik Sahibinin Bilgileri : \n" +
+                "kimlikId ='" + kimlikId +'\''+ "\n" +
+                "isimSoyisim='" + isimSoyisim +'\''+ "\n" +
+                "adres='" + adres +'\''+ "\n" +
+                "telefonNo='" + telefonNo + '\''+
+                "\n==============================";
+
+
     }
+
 }

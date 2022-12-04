@@ -10,7 +10,7 @@ public class KimliKSorguAnaSayfa {
                 "1 : Kimlik Kayıt \n" +
                 "2 : Kimlik Sorgu \n" +
                 "3 : Kimlik Silme \n" +
-                "0 : Çıkış");
+                "4 : Çıkış");
         int secim=scan.nextInt();
 
         switch (secim){
@@ -18,12 +18,19 @@ public class KimliKSorguAnaSayfa {
                 Kullanici.saveInfo();
                 break;
             case 2:
-                kimlikSorguAnaSayfa();
+                Kullanici.getInfo();
                 break;
             case 3:
                 kimlikSorguAnaSayfa();
                 break;
             case 4:
+                System.out.println("Güzel günleriniz olsun...");
+                break;
+            default:
+                System.out.println("Lütfen gecerli bir giriş yapınız\n" +
+                        "Giriş ekranına yönlendiriliyorsunuz.");
+                Thread.sleep(2000);
+                kimlikSorguAnaSayfa();
 
         }
     }
