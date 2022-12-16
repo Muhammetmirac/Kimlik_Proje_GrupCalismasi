@@ -21,7 +21,7 @@ public class KimliKSorguAnaSayfa {
                 Kullanici.getInfo();
                 break;
             case 3:
-                kimlikSorguAnaSayfa();
+                Kullanici.removeInfo();
                 break;
             case 4:
                 System.out.println("Güzel günleriniz olsun...");
